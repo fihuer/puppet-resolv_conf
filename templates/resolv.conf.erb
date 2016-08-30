@@ -9,6 +9,9 @@ search <%= @searchpath.join(" ") %>
 <% else -%>
 search <%= @searchpath %>
 <% end -%>
+<%- if @sortlist -%>
+sortlist <%= @sortlist %>
+<%- end -%>
 <% end -%>
 <% @nameservers.each do |ns| -%>
 nameserver <%= ns %>
