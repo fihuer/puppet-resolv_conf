@@ -18,6 +18,7 @@ class resolv_conf(
   $nameservers = undef,
   $domainname = undef,
   $searchpath = [],
+  $sortlist = undef,
   $options = undef
 ) inherits resolv_conf::params {
   validate_array( $nameservers )
